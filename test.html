@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="test.css">
+  <script type="text/javascript" src="test.js"></script>
+</head>
+<body>
+  <div class="login-page">
+    <div class="form">
+        <form class="login-form " action="logincontroller.php" target="_blank">
+            <h2>LOG IN</h2>
+            <input type="text" required placeholder="Username" id="user" autocomplete="off" />
+            <input oninput="return formvalid()" type="password" required placeholder="Password" id="pass" autocomplete="off" />
+            <img src="https://cdn2.iconfinder.com/data/icons/basic-ui-interface-v-2/32/hide-512.png"
+                onclick="show()" id="showimg">
+            <span id="vaild-pass"></span>
+            <button type="submit">Login</button>
+            <p class="message">Tester</p>
+        </form>
+    </div>
+  </div>
+</body>
+</html>
+

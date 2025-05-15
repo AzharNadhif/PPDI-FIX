@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="Website Icon"type="png" href="/images/logo.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="style4.css">
+    
+        <!-- FOOTER -->
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    
+        <title>Donasi</title>
+    
+        <!-- FONT INTER -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+        <!-- STYLE TESTIMONI -->
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            
+            body {
+                height: 100%;
+                margin: 0;
+                background-color: #fffef5;
+            }
+            
+            .wrapper {
+                height: 85vh;
+                width: 100vw;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin-left: -80px;
+            }
+            
+            .card {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                background-color: white;
+                padding: 50px 75px;
+                border-radius: 8px;
+                box-shadow: 0px 5px 16px 1px rgb(212, 210, 210);
+            }
+            
+            .about-wrapper {
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                width: 350px;
+                height: 350px;
+                z-index: 10;
+            }
+            
+            .image-wrapper {
+                flex-grow: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                width: 250px;
+                /* animation: funtoos 1s;
+                transition: 1s; */
+                overflow: hidden;
+                /* position: relative; */
+            }
+            
+            .about {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                padding: 70px 0;
+                padding-right: 2px;
+            }
+            
+            
+            .wrapper p{
+                font-size: 15px;
+                font-family: 'Inter';
+                font-weight: 300;
+                color: hsl(240, 38%, 20%);
+                /* animation: funtoos 1s; */
+                overflow: hidden;
+                transition: 450ms;
+                margin-right : 10px;
+            }
+            
+            @keyframes funtoos {
+                from {
+                    height: 0px;
+                    opacity: 0;
+                }
+                to {
+                    height: 100%;
+                    opacity: 1;
+                }
+            }
+            
+            .name {
+                font-size: 14px;
+                font-family: 'Inter', sans-serif;
+                font-weight: 700;
+            }
+            
+            .profession {
+                font-size: 14px;
+                font-family: 'Inter', sans-serif;
+                font-weight: 500;
+                color: hsl(240, 18%, 77%);
+            }
+            
+            .image {
+                /* width: 80%; */
+                height: 250px;
+                border-radius: 8px;
+                overflow: hidden;
+                margin-bottom: 10px;
+                display: flex;
+                flex-direction: row;
+                transition: 1s;
+            }
+            
+            .slider-button {
+                align-self: flex-start;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                height: 35px;
+                width: 70px;
+                border-radius: 40px;
+                background-color: #3494B2;
+                box-shadow: 0px 5px 6px 1px rgb(179, 179, 179);
+                position: absolute;
+                bottom: -35px;
+                left: 85%;
+                transform: translateX(-50%);
+            }
+            
+            @media (max-width:768px) {
+                body {
+                    background-color: white;
+                }
+                .card {
+                    justify-content: center;
+                    box-shadow: none;
+                }
+                .about-wrapper {
+                    order: 2;
+                    width: 100%;
+                    justify-content: flex-start;
+                    align-items: center;
+                }
+                .about {
+                    align-items: center;
+                    text-align: center;
+                    padding: 25px 25px;
+                }
+                .image-wrapper {
+                    order: 1;
+                }
+                .p {
+                    padding-top: 25px;
+                }
+                /* .image {
+                    height: 300px;
+                }
+                img {
+                    max-width: 300px;
+                }
+                .image-wrapper {
+                    width: 300px;
+                } */
+            }
+            
+            @media (max-width: 450px) {
+                p {
+                    font-size: 22px;
+                    margin: 5px 0px;
+                    padding-top: 50px;
+                }
+                body {
+                    background-color: white;
+                }
+                .card {
+                    justify-content: center;
+                    box-shadow: none;
+                    padding-right: 5px;
+                    padding-left: 5px;
+                }
+            }
+        </style>
+        <!-- AKHIR STYLE TESTIMONI -->
+    </head>
+    <body>
+
+        <!-- CTA WASSAPP -->
+        <a href="https://wa.wizard.id/fe9977" class="float" target="_blank">
+            <i class="fa fa-whatsapp my-float"></i>
+        </a>
+        <!-- AKHIR CTA WASSAP -->
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg bg-light fixed">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="images/logo.png" width="70" height="70" alt="">
+              </a>      
+              <!-- <a class="navbar-brand bold" href="#">PPDI Kota Bogor</a> -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="homepage.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="tentangkami.html">Tentang Kami</a>
+                  </li>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="artikel.php">Artikel</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="donasi.html">Donasi</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="sukarelawan.html">Sukarelawan</a>
+                  </li>
+                </ul>
+                <div class="topnav-right">
+                  <a class="btn" href="https://forms.gle/C4qgRErM5FoRqHid6" role="button">Bergabung Komunitas</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+      
+        <!-- AKHIR NAVBAR -->
+
+
+        <!-- BANNER -->
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="images/donasi.png" alt="First slide">
+              </div>
+        </div>
+      <!-- AKHIR BANNER -->
+
+<div class="container">
+    <!-- DONASI -->
+
+    <div class="donasi">
+        <h2> <b> Donasi </b></h2>
+        <div class="row">
+            <div class="col-md-4 py-5">
+                    <img src="images/donasi2.JPG" style="max-width:100%;height:auto;">
+            </div>
+            <div class="col-md-8 py-5">
+                <p style="text-align: justify; margin-right: 50px; margin-left: 100px; ">
+                    Dukungan dan partisipasi masyarakat sangat penting untuk memastikan bahwa komunitas disabilitas dapat hidup dengan penuh martabat dan kesempatan yang setara
+
+                    Mari bergabung dan memberikan dukungan kepada komunitas disabilitas melalui donasi Anda. Setiap sumbangan Anda akan memberikan kontribusi positif dalam membangun inklusi sosial dan kesejahteraan bagi mereka yang memiliki disabilitas.
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA DONASI -->
+    <div class="donate">
+        <div class="child">
+           <h2> <b> Tertarik untuk berdonasi? </b></h2>
+           <a class="btn btn-lg" href="https://kitabisa.com/campaign/bisabantudifabel?utm_source=socialsharing_donor_android_17856816dc3ea8a7896c1e037adf4ff7&utm_medium=CampaignPage_nativeshare&utm_campaign=Campaign" role="button"> <b> Donasikan </b></a>
+        </div>
+    </div>
+
+    <!-- AKHIR CTA DONASI -->
+
+
+    <!-- SLIDER TESTIMONIAL-->
+    <h2 style="text-align: center; margin-top: 80px;"><b>Mereka yang sudah berkontribusi</b></h2>
+    <div class="wrapper">
+        <div style="position: relative;" class="card">
+            <div class="about-wrapper">
+                <div class="about">
+                    <p id="para">"Saya berharap bahwa donasi saya dapat memberikan kontribusi yang signifikan bagi komunitas PPDI dalam menjalankan program-program mereka. Saya berharap dana yang telah saya berikan dapat digunakan untuk memberikan dukungan yang lebih baik bagi penyandang disabilitas, termasuk akses ke pendidikan, perawatan kesehatan, pelatihan, dan upaya advokasi untuk memperjuangkan hak-hak mereka. Saya berharap donasi saya dapat membuat perbedaan nyata dalam hidup mereka."</p>
+                    <span id="name" class="name">Adiba</span>
+                    <!-- <span id="profession" class="profession">UX Engineer</span> -->
+
+                </div>
+            </div>
+
+            <div style="position: relative;" class="right-content">
+
+                <div class="image-wrapper">
+
+
+                    <div id="image" style="position: relative;" class="image">
+
+                      <img style="border-radius: 8px; object-fit: cover;max-width:250px;" src="images/blank.jpeg">
+
+                      <img style="border-radius: 8px;object-fit: cover;max-width: 250px;" src="images/blank.jpeg">
+                      <img style="border-radius: 8px;object-fit: cover;max-width: 250px;" src="images/blank.jpeg">
+                    </div>
+                    <div id="slider-button" class="slider-button">
+                        <div style="cursor: pointer;" id="leftbutton" class="left">
+                            <span style="height: 25px;width: 25px;" class="iconify" data-icon="dashicons:arrow-left-alt2" data-inline="false"></span>
+
+                        </div>
+                        <div style="cursor:pointer;" id="rightbutton" class="right">
+
+                            <span style="height: 25px;width: 25px;" class="iconify" data-icon="dashicons:arrow-right-alt2" data-inline="false"></span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <!-- TUTUP TESTIMONIAL -->
+    
+
+</div>
+
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-left">
+        <h3> <b> PPDI KOTA BOGOR</b></h3>
+        <div class="logo">
+            <img src="images/logo.png" alt="">
+        </div>
+        <p class="footer-copyright">@2023 Tadika Mesra</p>
+    </div>
+
+    <div class="footer-center">
+        <div>
+            <i class="fa fa-map-marker" style="background-color: #3494B2;"></i>
+            <p> <a href="https://maps.app.goo.gl/h8TfgepQ7PhRroPdA">Loka Bina Karya, Tegal Gundil Bogor</a></p>
+        </div>
+        <div>
+            <i class="fa fa-phone" style="background-color: #3494B2;"></i>
+            <p>087781166562</p>
+        </div>
+        <div>
+            <i class="fa fa-envelope" style="background-color: #3494B2;"></i>
+            <p><a href="#">dpcppdiktbogor@gmail.com</a></p>
+        </div>
+    </div>
+    <div class="footer-right">
+        <h3> <b>Bergabung Sekarang</b></h3>
+            <p class="footer-about">
+                Dapatkan Informasi seputar Teman Disabilitas 
+                dan artikel terbaru lainnya!
+            </p>
+
+        <!-- POP UP -->
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="border-radius: 25px; margin-top: 10px; background-color: #3494B2; color: #ffffff;"> <b>
+                Subscribe </b>
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Bergabung Sekarang!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                          <div class="mb-3">
+                            <h6><b>Subscribe Now !</b></h6>
+                            <p>
+                                Dapatkan Informasi seputar Teman Disabilitas 
+                                dan artikel terbaru lainnya!
+                            </p>
+                          </div>
+                          <div class="mb-3">
+                            <label for="email" class="col-form-label">Email:</label>
+                            <input type="text" class="form-control" id="email">
+                          </div>
+                        </form>
+                      </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" style="border-radius: 25px;">Batal</button>
+                    <button type="button" class="btn" style="background-color: #3494B2; border-radius: 25px; color: #ffffff;">Simpan</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        <!-- AKHIR POP UP -->
+
+        <div class="footer-media" style="margin-left: -0px;">
+            <a href="https://www.youtube.com/@SDBOGOR/featured" style="background-color: #205E71;"><i class="fa fa-youtube"></i></a>
+            <a href="https://www.instagram.com/dpc.ppdi.kotabogor.22/" style="background-color: #205E71;"><i class="fa fa-instagram" ></i></a>
+        </div>
+       
+    </div>
+    
+
+</footer>
+
+<!-- AKHIR FOOTER -->
+
+
+</body>
+
+<script>
+    var sliderbutton = document.getElementById('slider-button'),
+        leftbutton = document.getElementById('leftbutton'),
+        rightbutton = document.getElementById('rightbutton'),
+        imagelist = document.getElementById('image'),
+        para = document.getElementById('para');
+    var nameof = document.getElementById('name'),
+        profession = document.getElementById('profession'),
+        x = 1,
+        contentlist = [
+            [
+                ` "Saya berharap bahwa donasi saya dapat memberikan kontribusi yang signifikan bagi komunitas PPDI dalam menjalankan program-program mereka. Saya berharap dana yang telah saya berikan dapat digunakan untuk memberikan dukungan yang lebih baik bagi penyandang disabilitas, termasuk akses ke pendidikan, perawatan kesehatan, pelatihan, dan upaya advokasi untuk memperjuangkan hak-hak mereka. Saya berharap donasi saya dapat membuat perbedaan nyata dalam hidup mereka."`,
+                'Adiba',
+                 // 'UI/UX Engineer' profesi
+
+            ],
+            [
+                `
+                "Saya berharap donasi saya dapat memperluas jangkauan dan dampak positif komunitas PPDI. Saya berharap dana tersebut dapat digunakan untuk menciptakan program-program baru, memperluas layanan yang ada, dan mengembangkan inisiatif yang lebih luas untuk mempromosikan inklusi dan kesetaraan bagi penyandang disabilitas di Indonesia. Saya ingin donasi saya menjadi bagian dari perubahan positif yang lebih besar dalam masyarakat."
+                `,
+                'Rahmat',
+                // 'UI/UX Engineer' profesi
+            ],
+            [
+                ` "Saya berharap melalui donasi saya, komunitas PPDI dapat terus berkembang dan menjadi lebih kuat. Saya berharap dana tersebut dapat digunakan untuk membangun kapasitas organisasi, merekrut dan melibatkan lebih banyak staf dan relawan, serta meningkatkan keberlanjutan program. Saya berharap donasi saya dapat memberikan dorongan yang berkelanjutan bagi PPDI dalam memperjuangkan hak-hak dan kesejahteraan penyandang disabilitas, serta mendorong perubahan sosial yang lebih luas."`,
+                'Sandi',
+                // 'Junior Front-end Developer'
+
+            ],
+
+        ];
+
+
+    leftbutton.addEventListener('mouseup', async function(event) {
+
+
+        if (x > 1) {
+            x -= 1;
+
+            const lastnum = imagelist.style.getPropertyValue('transform').length - 3;
+            var xoffsetvalue = +imagelist.style.getPropertyValue('transform').substring(11, lastnum) + 250;
+
+            imagelist.style.transform = `translateX(${xoffsetvalue}px)`;
+            para.innerText = '';
+            para.innerText = contentlist[x - 1][0];
+            nameof.innerText = '';
+            nameof.innerText = contentlist[x - 1][1];
+            profession.innerText = '';
+            profession.innerText = contentlist[x - 1][2];
+
+            para.style.animation = 'funtoos';
+            para.style.animationDuration = '1s';
+
+            await setTimeout(function(event) {
+
+                para.style.animation = 'none';
+                console.log('reset done');
+
+            }, 1000);
+
+
+        }
+
+    });
+
+
+
+    rightbutton.addEventListener('mouseup', async function(event) {
+        if (x != imagelist.children.length && x < imagelist.children.length) {
+
+            x += 1;
+            // para.style.animation = 'none';
+            console.log(imagelist.children.length, x);
+            if (x <= imagelist.children.length) {
+
+
+
+                const lastnum = imagelist.style.getPropertyValue('transform').length - 3;
+                var xoffsetvalue = +imagelist.style.getPropertyValue('transform').substring(11, lastnum) - 250;
+
+                imagelist.style.transform = `translateX(${xoffsetvalue}px)`;
+
+                para.innerText = '';
+                para.innerText = contentlist[x - 1][0];
+                nameof.innerText = '';
+                nameof.innerText = contentlist[x - 1][1];
+                profession.innerText = '';
+                profession.innerText = contentlist[x - 1][2];
+
+                para.style.animation = 'funtoos';
+                para.style.animationDuration = '1s';
+
+                await setTimeout(function(event) {
+
+                    para.style.animation = 'none';
+                    console.log('reset done');
+
+                }, 1000);
+
+                // x += 1;
+
+            }
+
+        }
+
+
+    });
+</script>
+
+<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+
+</html>
